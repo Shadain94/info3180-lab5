@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Add User Form</h1>
+<hr id="margin">
+
+<p> Fill out this form to be added as a User in the System</p>
+
+<form method="POST" action="/add_user">
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <small class="form-text text-muted" id="first">&nbsp (Required)</small>
+    <p><small  class="form-text text-muted">Please enter your first name</small></p>
+    <input type="text" class="form-control" id="name_field" style="width: 300px" name="firstname" >
+  </div>
+  
+  <div class="form-group">
+    <label for="email_field">Last Name</label>
+    <small class="form-text text-muted" id="second">&nbsp (Required)</small>
+    <p><small  class="form-text text-muted">Please enter your last name</small></p>
+    <input type="text" class="form-control" id="email_field" style="width: 300px" name="lastname">
+  </div>
+  
+  <div class="form-group">
+    <label for="subject_field">Username</label>
+    <small class="form-text text-muted" id="third">&nbsp (Required)</small>
+    <p><small class="form-text text-muted">Please enter your user name</small></p>
+    <input type="text" class="form-control" id="subject_field" style="width: 300px" name="username">
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="subject_field">Password</label>
+    <small class="form-text text-muted" id="third">&nbsp (Required)</small>
+    <p><small class="form-text text-muted">Please enter your password</small></p>
+    <input type="password" class="form-control" id="subject_field" style="width: 300px" name="password">
+  </div>
+  
+
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+{% endblock %}
